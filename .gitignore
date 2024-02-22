@@ -3,5 +3,6 @@ log.DEV/
 log.STABLE/
 build/
 install/
+gin/
 go.work
 go.work.backup
