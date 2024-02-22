@@ -4,5 +4,6 @@ log.STABLE/
 build/
 install/
 gin/
+go/
 go.work
 go.work.backup

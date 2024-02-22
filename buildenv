@@ -13,7 +13,7 @@ export ZOPEN_CATEGORIES="core"
 export ZOPEN_COMP=GO
 export ZOPEN_CONFIGURE="zopen_config"
 export ZOPEN_CONFIGURE_MINIMAL=1
-export ZOPEN_MAKE="skip"
+export ZOPEN_MAKE="zopen_build"
 export ZOPEN_INSTALL="zopen_install"
 export ZOPEN_CHECK="skip"
 export ZOPEN_CLEAN="zopen_clean"
@@ -45,6 +45,7 @@ zopen_config()
 
   cd .. && echo ""
   go work init ./gin
+  cd gin
 }
 
 zopen_install()
@@ -52,7 +53,6 @@ zopen_install()
   echo "here-at-install $PWD"
   echo "GOBIN is $GOBIN"
  
-  cd gin 
   go install
 }
 
