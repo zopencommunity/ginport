@@ -4,7 +4,7 @@
 GIN_VERSION="1.9.1" # Specify a stable release
 export ZOPEN_STABLE_TAG="v${GIN_VERSION}"
 export ZOPEN_STABLE_URL="https://github.com/gin-gonic/gin.git"
-export ZOPEN_STABLE_DEPS="comp_go"
+export ZOPEN_STABLE_DEPS="comp_go git curl"
 
 export ZOPEN_BUILD_LINE="STABLE"
 
